@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="google-site-verification"
+            content="Iqf4X4uvhws9Ja5bhtrx9z3NVKYmJOBQdCJkhyuiMJ0" />
+
+        <meta charset="utf-8">
+        <title>Copied</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content name="keywords">
+        <meta content name="description">
+
+        <!--Bootstrap CDN, otherwise it will look all Shreky-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <!--LINK PREVIEW -> General-->
+        <meta property="og:title" content="Copy once, paste anywhere">
+        <meta property="og:description"
+            content="Copy any item on your clipboard
+            & instantly access it on all your other devices">
+        <meta property="og:image"
+            content="https://firebasestorage.googleapis.com/v0/b/copied-app.appspot.com/o/_Copied_Assets%2Fog_image.png?alt=media&token=b32e61df-7b7e-4371-b294-8237f7089c0b">
+        <meta property="og:image_url"
+            content="https://firebasestorage.googleapis.com/v0/b/copied-app.appspot.com/o/_Copied_Assets%2Fog_image.png?alt=media&token=b32e61df-7b7e-4371-b294-8237f7089c0b">
+        <meta property="og:image:secure_url"
+            content="https://firebasestorage.googleapis.com/v0/b/copied-app.appspot.com/o/_Copied_Assets%2Fog_image.png?alt=media&token=b32e61df-7b7e-4371-b294-8237f7089c0b" />
+        <meta property="og:url" content="https://www.copied.info">
+        <meta property="og:type" content="website">
+
+        <!--LINK PREVIEW -> For Twitter/X-->
+        <meta name="twitter:card" content>
+        <meta name="twitter:title" content="Copy once, paste anywhere">
+        <meta name="twitter:description" content="copy any item on your
+            clipboard
+            & instantly access it on all your other devices">
+        <meta name="twitter:image"
+            content="https://firebasestorage.googleapis.com/v0/b/copied-app.appspot.com/o/_Copied_Assets%2Fog_image.png?alt=media&token=b32e61df-7b7e-4371-b294-8237f7089c0b">
+        <!-- Other Twitter Card tags if needed -->
+
+        <!-- Favicon -->
+        <!-- <link href="favicon.ico" rel="icon"> -->
+        <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+        <link rel="icon"
+            href="https://firebasestorage.googleapis.com/v0/b/copied-app.appspot.com/o/_Copied_Assets%2Ffavicon.ico?alt=media&token=f35f9632-f9ce-43a4-83d2-9ef66d5464a1"
+            type="image/x-icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51"
+        data-target=".fixed-top">
+        <!--Material design for the beautiful bullet point list-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css"
+            integrity="sha256-nwNjrH7J9zS/Ti4twtWX7OsC5QdQHCIKTv5cLMsGo68="
+            crossorigin="anonymous" />
+
+        <!-- Preloader -->
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+
+        <div class="container-xxl bg-white p-0">
+            <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed
+                translate-middle w-100 vh-100 top-50 start-50 d-flex
+                align-items-center justify-content-center">
+                <div class="spinner-grow text-primary" style="width: 3rem;
+                    height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+
+            <!-- Navbar & Hero Start -->
+            <div class="container-xxl position-relative p-0" id="home">
+                <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5
+                    py-3 py-lg-0">
+                    <a href class="navbar-brand p-0">
+                        <h1 class="m-0">Copied</h1>
+                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    </a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto py-0">
+                            <a href="#feature"
+                                class="nav-item nav-link">Features</a>
+                            <a href="#howItWorks" class="nav-item nav-link">How
+                                it
+                                works</a>
+                            <a href="#pricing"
+                                class="nav-item nav-link">Pricing</a>
+                            <a class="nav-link">||</a>
+
+                            <a id="releaseHistory" href="#releaseHistory"
+                                class="nav-item nav-link">Release history</a>
+                            <a href="https://www.youtube.com/@CopiedApp"
+                                target="_blank"
+                                class="nav-item nav-link">Youtube</a>
+                        </div>
+                        <a href="#download" class="btn btn-primary-gradient
+                            rounded-pill
+                            py-2 px-4 ms-3 d-none d-lg-block">Download</a>
+                    </div>
+                </nav>
+
+                <div class="container-xxl bg-primary hero-header">
+                    <div class="container px-lg-5">
+                        <div class="row g-5">
+                            <div class="col-lg-8 text-center text-lg-start">
+                                <h1 class="text-white mb-4 animated
+                                    slideInDown"><span
+                                        style="color:#FFD700">Copy</span>
+                                    once, <span
+                                        style="color:#FFD700">Paste</span>
+                                    anywhere! <p></p>
+                                    <p style="margin-top:5%"></p>
+                                    Seamless clipboard sharing between all your
+                                    devices</h1>
+                            </div>
+                            <div class="col-lg-4 d-flex justify-content-center
+                                justify-content-lg-end wow fadeInUp"
+                                data-wow-delay="0.3s">
+                                <div class="owl-carousel screenshot-carousel">
+                                    <img class="img-fluid"
+                                        src="img/Screenshot1.jpeg" alt>
+                                    <img class="img-fluid"
+                                        src="img/Screenshot2.jpeg" alt>
+                                    <img class="img-fluid"
+                                        src="img/Screenshot3.jpeg" alt>
+                                    <img class="img-fluid"
+                                        src="img/Screenshot4.jpeg" alt>
+                                    <img class="img-fluid"
+                                        src="img/Screenshot5.jpeg" alt>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar & Hero End -->
+
+            <!-- Features Start -->
+            <div class="container-xxl py-5" id="feature">
+                <div class="container py-5 px-lg-5">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">App
+                            Essentials</h5>
+                        <h1 class="mb-5">Pasted with features</h1>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <div class="feature-item bg-light rounded p-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-primary-gradient
+                                    rounded-circle mb-4" style="width: 60px;
+                                    height: 60px;">
+                                    <i class="fa fa-layer-group text-white
+                                        fs-4"></i>
+                                </div>
+                                <h5 class="mb-3">Copy both text & images</h5>
+                                <p class="m-0">Simplify content capture - our
+                                    clipboard manager easily handles both text
+                                    and images.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div class="feature-item bg-light rounded p-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-secondary-gradient
+                                    rounded-circle mb-4" style="width: 60px;
+                                    height: 60px;">
+                                    <i class="fa fa-eye text-white fs-4"></i>
+                                </div>
+                                <h5 class="mb-3">View your history</h5>
+                                <p class="m-0">Access a log of your previously
+                                    copied content with ease. Copy, download &
+                                    delete any item or all at once</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp"
+                            data-wow-delay="0.5s">
+                            <div class="feature-item bg-light rounded p-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-primary-gradient
+                                    rounded-circle mb-4" style="width: 60px;
+                                    height: 60px;">
+                                    <i
+                                        class="fa fa-shield-alt text-white fs-4"></i>
+                                </div>
+                                <h5 class="mb-3">Password protect your data</h5>
+                                <p class="m-0">Protect your sensitive
+                                    information from prying eyes by locking it
+                                    behind a secure passcode for added
+                                    security.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <div class="feature-item bg-light rounded p-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-secondary-gradient
+                                    rounded-circle mb-4" style="width: 60px;
+                                    height: 60px;">
+                                    <i
+                                        class="fa fa-mobile-alt text-white fs-4"></i>
+                                </div>
+                                <h5 class="mb-3">Available on multiple operating
+                                    systems</h5>
+                                <p class="m-0">Work flexibly across different
+                                    operating systems; Android, Mac OS, Windows,
+                                    & Linux
+                                    for consistent functionality.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div class="feature-item bg-light rounded p-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-primary-gradient
+                                    rounded-circle mb-4" style="width: 60px;
+                                    height: 60px;">
+                                    <i class="fa fa-cloud text-white fs-4"></i>
+                                </div>
+                                <h5 class="mb-3">Bookmark your most copied
+                                    items</h5>
+                                <p class="m-0">Bookmark your frequently used
+                                    content to keep it readily available
+                                    whenever required.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp"
+                            data-wow-delay="0.5s">
+                            <div class="feature-item bg-light rounded p-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-secondary-gradient
+                                    rounded-circle mb-4" style="width: 60px;
+                                    height: 60px;">
+                                    <i class="fa fa-edit text-white fs-4"></i>
+                                </div>
+                                <h5 class="mb-3">View metadata of your
+                                    clips</h5>
+                                <p class="m-0">Get detailed insights:
+                                    letter/word counts for text, image
+                                    dimensions & sizes,
+                                    origin details, and the total clip size</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Features End -->
+
+            <!-- Screenshot Start -->
+            <div class="container-xxl py-5">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-8 wow fadeInUp"
+                            data-wow-delay="0.1s">
+                            <h5
+                                class="text-primary-gradient fw-medium">Screenshot</h5>
+                            <h1 class="mb-4">User friendly interface and easy to
+                                use</h1>
+                            <p class="mb-4">Intuitive and accessible, Copied
+                                incorporates a user-friendly interface for
+                                seamless navigation and hassle-free
+                                operation.</p>
+                            <p><i class="fa fa-check text-primary-gradient
+                                    me-3"></i>Efforless Navigation: Only 1 page
+                                that contains all the functionality</p>
+                            <p><i class="fa fa-check text-primary-gradient
+                                    me-3"></i>Simple Operation: Choose only what
+                                you
+                                want copied</p>
+                            <p class="mb-4"><i class="fa fa-check
+                                    text-primary-gradient me-3"></i>Minimal
+                                Interruptions: No disruptive notifications &
+                                background tasks</p>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center
+                            justify-content-lg-end wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid"
+                                    src="img/Screenshot1.jpeg" alt>
+                                <img class="img-fluid"
+                                    src="img/Screenshot2.jpeg" alt>
+                                <img class="img-fluid"
+                                    src="img/Screenshot3.jpeg" alt>
+                                <img class="img-fluid"
+                                    src="img/Screenshot4.jpeg" alt>
+                                <img class="img-fluid"
+                                    src="img/Screenshot5.jpeg" alt>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Screenshot End -->
+
+            <!-- How it works -->
+            <div class="container-xxl py-5" id="howItWorks">
+                <div class="container py-5 px-lg-5">
+                    <div class="text-center pb-4 wow fadeInUp"
+                        data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">How It
+                            Works</h5>
+                        <h1 class="mb-5">3 Easy Steps</h1>
+                    </div>
+                    <div class="row gy-5 gx-4 justify-content-center">
+                        <div class="col-lg-4 col-sm-6 text-center pt-4 wow
+                            fadeInUp" data-wow-delay="0.1s">
+                            <div class="position-relative bg-light rounded pt-5
+                                pb-4 px-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-primary-gradient
+                                    rounded-circle position-absolute top-0
+                                    start-50 translate-middle shadow"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="fa fa-cog fa-2x text-white"></i>
+                                </div>
+                                <h5 style="margin-top: 5%;">Install the App</h5>
+                                <p class="mb-0" style="display: none;">Download
+                                    the Android app from
+                                    playstore, create an account. Download the
+                                    same for your computer variant & use the
+                                    same email address</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center pt-4 wow
+                            fadeInUp" data-wow-delay="0.3s">
+                            <div class="position-relative bg-light rounded pt-5
+                                pb-4 px-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-secondary-gradient
+                                    rounded-circle position-absolute top-0
+                                    start-50 translate-middle shadow"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="fa fa-copy fa-3x
+                                        text-white"></i>
+                                </div>
+                                <h5 style="margin-top: 5%;">Start Copying</h5>
+                                <p class="mb-0" style="display: none;">On
+                                    Android, after copying an
+                                    item, you can choose whether it should be
+                                    copied or not. On your computer, no extra
+                                    action is needed</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 text-center pt-4 wow
+                            fadeInUp" data-wow-delay="0.5s">
+                            <div class="position-relative bg-light rounded pt-5
+                                pb-4 px-4">
+                                <div class="d-inline-flex align-items-center
+                                    justify-content-center bg-primary-gradient
+                                    rounded-circle position-absolute top-0
+                                    start-50 translate-middle shadow"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="fa fa-check fa-3x text-white"></i>
+                                </div>
+                                <h5 style="margin-top: 5%;">Enjoy The Magic</h5>
+                                <p class="mb-0" style="display: none;">Your
+                                    copied item will be synced
+                                    on the cloud & will be available for pasting
+                                    in all of the supported operating systems;
+                                    Android, Mac, Linux & Windows</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div id="video" class="basic-2"
+                                style="margin-left:10%; margin-right:
+                                10%;margin-bottom:5%;padding-top: -50%;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+
+                                            <!-- Video Preview -->
+                                            <div class="image-container">
+                                                <div class="video-wrapper">
+                                                    <a class="popup-youtube"
+                                                        href="https://www.youtube.com/watch?v=X8w0TSaeSGw"
+                                                        data-effect="fadeIn">
+                                                        <img class="img-fluid"
+                                                            src="img/video-image.png"
+                                                            alt="alternative">
+                                                        <span
+                                                            class="video-play-button">
+                                                            <span></span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <!-- end of video-wrapper -->
+                                            </div>
+                                            <!-- end of image-container -->
+                                            <!-- end of video preview -->
+                                        </div> <!-- end of col -->
+                                    </div> <!-- end of row -->
+                                </div> <!-- end of container -->
+                            </div>
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div>
+            </div>
+            <!-- Process Start -->
+
+            <!-- Pricing Start -->
+            <div class="container-xxl py-5" id="pricing">
+                <div class="container py-5 px-lg-5">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Pricing
+                            Plan</h5>
+                        <h1 class="mb-5">Choose Your Plan</h1>
+                    </div>
+                    <div class="tab-class text-center pricing wow fadeInUp"
+                        data-wow-delay="0.1s">
+                        <div class="tab-content text-start">
+                            <div id="tab-1" class="tab-pane fade show p-0
+                                active">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <!-- Basic plan -->
+                                        <div class="bg-light rounded">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4
+                                                    class="text-primary-gradient
+                                                    mb-1">Basic</h4>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top"
+                                                        style="font-size: 22px;
+                                                        line-height: 45px;"></small>Free
+                                                </h1>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Storage
+                                                        period</span><i>1
+                                                        day</i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-4"><span>Connected
+                                                        devices</span><i
+                                                        style="color: grey;">2</i></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Gold plan-->
+                                    <div class="col-lg-6">
+                                        <div class="bg-warning rounded border">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4 class>Gold</h4>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top"
+                                                        style="font-size: 22px;
+                                                        line-height: 45px;">$</small>0.99<small
+                                                        class="align-bottom"
+                                                        style="font-size: 16px;
+                                                        line-height: 40px;">/
+                                                        Month</small>
+                                                </h1>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span style="color:
+                                                        black;">Storage
+                                                        period</span><i
+                                                        style="color:
+                                                        black;">1
+                                                        month</i></div>
+                                                <div class="d-flex
+                                                        justify-content-between
+                                                        mb-2"><span
+                                                        style="color:
+                                                            black;">Connected
+                                                        devices</span><i
+                                                        style="color: grey;
+                                                            font-size: 150%;">∞</i></div>
+                                                <div class="d-flex
+                                                             justify-content-between
+                                                             mb-3"><span
+                                                        style="color:
+                                                                 black;">Copy
+                                                        images &
+                                                        screenshots</span><i
+                                                        class="fa fa-check
+                                                                 text-primary-gradient
+                                                                 pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span style="color:
+                                                        black;">Bookmark
+                                                        items</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+
+                                                <div class="d-flex
+                                                         justify-content-between
+                                                         mb-3"><span
+                                                        style="color:
+                                                             black;">Floating
+                                                        edge
+                                                        panel</span><i
+                                                        class="fa fa-check
+                                                             text-primary-gradient
+                                                             pt-1"></i></div>
+                                                <div class="d-flex
+                                                             justify-content-between
+                                                             mb-3"><span
+                                                        style="color:
+                                                                 black;">OCR:Extract
+                                                        text from
+                                                        images</span><i
+                                                        class="fa fa-check
+                                                                 text-primary-gradient
+                                                                 pt-1"></i></div>
+                                                <div class="d-flex
+                                                             justify-content-between
+                                                             mb-3"><span
+                                                        style="color:
+                                                                 black;">View
+                                                        clip
+                                                        types</span><i
+                                                        class="fa fa-check
+                                                                 text-primary-gradient
+                                                                 pt-1"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Platinum plan-->
+                                    <div class="col-lg-4" style="display:
+                                        none;">
+                                        <div class="bg-light rounded">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4
+                                                    class="text-primary-gradient
+                                                    mb-1">Platinum Plan</h4>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top"
+                                                        style="font-size: 22px;
+                                                        line-height: 45px;">$</small>30<small
+                                                        class="align-bottom"
+                                                        style="font-size: 16px;
+                                                        line-height: 40px;">/
+                                                        Month</small>
+                                                </h1>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Storage
+                                                        period</span><i>1
+                                                        month</i></div>
+                                                <div class="d-flex
+                                                        justify-content-between
+                                                        mb-2"><span>Connected
+                                                        devices</span><i
+                                                        style="color: grey;
+                                                            font-size: 150%;">∞</i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Bookmark
+                                                        items</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Copy images &
+                                                        screenshots</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane fade p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-4">
+                                        <div class="bg-light rounded">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4
+                                                    class="text-primary-gradient
+                                                    mb-1">Starter Plan</h4>
+                                                <span>Powerful & Awesome
+                                                    Features</span>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top"
+                                                        style="font-size: 22px;
+                                                        line-height: 45px;">$</small>114.99<small
+                                                        class="align-bottom"
+                                                        style="font-size: 16px;
+                                                        line-height: 40px;">/
+                                                        Monthly</small>
+                                                </h1>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>HTML5 &
+                                                        CSS3</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Bootstrap
+                                                        v5</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Responsive
+                                                        Layout</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-2"><span>Cross-browser
+                                                        Support</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <a href class="btn
+                                                    btn-primary-gradient
+                                                    rounded-pill py-2 px-4
+                                                    mt-4">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="bg-light rounded border">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4
+                                                    class="text-primary-gradient
+                                                    mb-1">Advance Plan</h4>
+                                                <span>Powerful & Awesome
+                                                    Features</span>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top"
+                                                        style="font-size: 22px;
+                                                        line-height: 45px;">$</small>124.99<small
+                                                        class="align-bottom"
+                                                        style="font-size: 16px;
+                                                        line-height: 40px;">/
+                                                        Monthly</small>
+                                                </h1>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>HTML5 &
+                                                        CSS3</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Bootstrap
+                                                        v5</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Responsive
+                                                        Layout</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-2"><span>Cross-browser
+                                                        Support</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <a href class="btn
+                                                    btn-primary-gradient
+                                                    rounded-pill py-2 px-4
+                                                    mt-4">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="bg-light rounded">
+                                            <div class="border-bottom p-4 mb-4">
+                                                <h4
+                                                    class="text-primary-gradient
+                                                    mb-1">Premium Plan</h4>
+                                                <span>Powerful & Awesome
+                                                    Features</span>
+                                            </div>
+                                            <div class="p-4 pt-0">
+                                                <h1 class="mb-3">
+                                                    <small class="align-top"
+                                                        style="font-size: 22px;
+                                                        line-height: 45px;">$</small>134.99<small
+                                                        class="align-bottom"
+                                                        style="font-size: 16px;
+                                                        line-height: 40px;">/
+                                                        Monthly</small>
+                                                </h1>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>HTML5 &
+                                                        CSS3</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Bootstrap
+                                                        v5</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-3"><span>Responsive
+                                                        Layout</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <div class="d-flex
+                                                    justify-content-between
+                                                    mb-2"><span>Cross-browser
+                                                        Support</span><i
+                                                        class="fa fa-check
+                                                        text-primary-gradient
+                                                        pt-1"></i></div>
+                                                <a href class="btn
+                                                    btn-primary-gradient
+                                                    rounded-pill py-2 px-4
+                                                    mt-4">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing End -->
+
+            <!--Release history modal-->
+            <div id="releaseHistoryModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content"
+                    style="background-color: rgb(229, 229, 229);">
+                    <span class="close" id="closeReleaseHistoryModal"
+                        style="right: 3%; position:absolute;">&times;</span>
+                    <div style="margin-top:5%">
+                        <div class="container">
+                            <h1 class="text-center">Release history</h1>
+                            <br>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-10 col-12">
+                                    <h5 class="mt-4"> <span
+                                            class="p-2 bg-light shadow rounded text-success">
+                                            Version 4.0.2</span> - 1st
+                                        March, 2024</h5>
+                                    <ul class="list-unstyled mt-3">
+                                        <li class="text-muted ml-3"><i
+                                                class="mdi mdi-circle-medium mr-2"></i>Edge
+                                            panel</li>
+                                    </ul>
+                                    <h5 class="mt-4"> <span
+                                            class="p-2 bg-light shadow rounded text-success">
+                                            Version 3.0.7</span> - 19th
+                                        February, 2024</h5>
+                                    <ul class="list-unstyled mt-3">
+                                        <li class="text-muted ml-3"><i
+                                                class="mdi mdi-circle-medium mr-2"></i>OCR
+                                            Added: Extract text from images &
+                                            screenshots on
+                                            the mobile app</li>
+                                    </ul>
+                                    <h5 class="mt-4"> <span
+                                            class="p-2 bg-light shadow rounded text-success">
+                                            Version 3.0.2</span> - 12th
+                                        February, 2024</h5>
+                                    <ul class="list-unstyled mt-3">
+                                        <li class="text-muted ml-3"><i
+                                                class="mdi mdi-circle-medium mr-2"></i>Access
+                                            your favorite clips in a floating
+                                            window for the mobile app</li>
+                                    </ul>
+                                    <h5 class="mt-4"> <span
+                                            class="p-2 bg-light shadow rounded text-success">
+                                            Version 2.0.7</span> - 9th February,
+                                        2024</h5>
+                                    <ul class="list-unstyled mt-3">
+                                        <li class="text-muted ml-3"><i
+                                                class="mdi mdi-circle-medium mr-2"></i>Added
+                                            typing in dialog box
+                                            functionality</li>
+                                    </ul>
+                                    <h5 class="mt-4"> <span
+                                            class="p-2 bg-light shadow rounded text-success">
+                                            Version 2.0.6</span> - 7th February,
+                                        2024</h5>
+                                    <ul class="list-unstyled mt-3">
+                                        <li class="text-muted ml-3"><i
+                                                class="mdi mdi-circle-medium mr-2"></i>Set
+                                            the no. of clips to show</li>
+                                    </ul>
+                                    <h5 class="mt-4"> <span
+                                            class="p-2 bg-light shadow rounded text-success">
+                                            Version 1.0.0</span> - 28th January,
+                                        2024</h5>
+                                    <ul class="list-unstyled mt-3">
+                                        <li class="text-muted ml-3"><i
+                                                class="mdi mdi-circle-medium mr-2"></i>Initial
+                                            Release 🍻</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Community modal-->
+            <div id="communityModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="closeCommunityModal" id="closeCommunityModal"
+                        style="right: 3%; position:absolute;">&times;</span>
+                    <div style="margin-top:5%">
+                        <div class="container">
+                            <h1 class="text-center">Follow us on</h1>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Download Start -->
+            <div class="container-xxl py-5" id="download">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <img class="img-fluid wow fadeInUp"
+                                data-wow-delay="0.1s" src="img/collage.png">
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <h5
+                                class="text-primary-gradient fw-medium">Download</h5>
+                            <h1 class="mb-4">Download The Latest Version</h1>
+                            <p class="mb-4">Currently supporting:</p>
+                            <p> Android,
+                                Linux, Mac OS & Windows</p>
+                            <div class="hoverButton row g-4"
+                                style="justify-content:
+                                center;margin: auto;">
+                                <div class="col-sm-6 wow fadeIn"
+                                    data-wow-delay="0.7s">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=psychonix.android.copied"
+                                        class="d-flex
+                                        bg-secondary-gradient rounded py-3
+                                        px-4"
+                                        target="_blank">
+                                        <i class="fab fa-android fa-3x
+                                            text-white flex-shrink-0 mt-2"></i>
+                                        <div class="ms-3">
+                                            <h5
+                                                class="text-white mt-1 mb-0">Android
+                                                App</h5>
+                                            <h5 class="text-white mt-2 mb-0">on
+                                                playstore</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <p></p>
+                            <div class="row g-4">
+                                <!-- Linux availability -->
+                                <div class="col-sm-4 wow fadeIn"
+                                    data-wow-delay="0.5s">
+                                    <a class="d-flex
+                                        rounded py-3 px-4"
+                                        style="background-color: grey;">
+                                        <i class="fab fa-linux fa-2x
+                                            text-white flex-shrink-0"></i>
+                                        <div class="ms-2"
+                                            style="justify-content:
+                                            center;margin: auto;">
+                                            <h5
+                                                class="text-white mb-0 ms-2">Linux</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Mac OS availability -->
+                                <div class="col-sm-4 wow fadeIn"
+                                    data-wow-delay="0.7s">
+                                    <a class="d-flex
+                                         rounded py-3
+                                        px-4"
+                                        style="background-color: grey;">
+
+                                        <i class="fab fa-apple fa-2x text-white
+                                            flex-shrink-0"></i>
+                                        <div class="ms-2"
+                                            style="justify-content:
+                                            center;margin: auto;">
+                                            <h5
+                                                class="text-white mb-0 ms-2">Mac</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Windows availability -->
+                                <div class="hoverButton col-sm-4 wow fadeIn"
+                                    data-wow-delay="0.7s">
+                                    <a
+                                        href="https://copied.info/Copied Setup 1.0.2.exe"
+                                        class="d-flex
+                                        bg-secondary-gradient rounded py-3
+                                        px-4">
+                                        <i class="fab fa-windows fa-2x
+                                            text-white flex-shrink-0"></i>
+                                        <div class="ms-2"
+                                            style="justify-content:
+                                            center;margin: auto;">
+                                            <h5 class="text-white mb-0
+                                                me-5 mr-5">Windows</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Download End -->
+
+            <!-- Footer Start (HIDDEN FOR NOW)-->
+            <div class="container-fluid bg-primary text-light footer wow fadeIn"
+                data-wow-delay="0.1s">
+                <div class="container py-5 px-lg-5" style="display: none;">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-4">
+                            <h4 class="text-white mb-4">Address</h4>
+                            <p><i class="fa fa-map-marker-alt me-3"></i>123
+                                Street, New York, USA</p>
+                            <p><i class="fa fa-phone-alt me-3"></i>+012 345
+                                67890</p>
+                            <p><i
+                                    class="fa fa-envelope me-3"></i>info@example.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social"
+                                    href><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-light btn-social"
+                                    href><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <h4 class="text-white mb-4">Quick Link</h4>
+                            <a class="btn btn-link" href>About Us</a>
+                            <a class="btn btn-link" href>Contact Us</a>
+                            <a class="btn btn-link" href>Privacy Policy</a>
+                            <a class="btn btn-link" href>Terms & Condition</a>
+                            <a class="btn btn-link" href>Career</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <h4 class="text-white mb-4">Popular Link</h4>
+                            <a class="btn btn-link" href>About Us</a>
+                            <a class="btn btn-link" href>Contact Us</a>
+                            <a class="btn btn-link" href>Privacy Policy</a>
+                            <a class="btn btn-link" href>Terms & Condition</a>
+                            <a class="btn btn-link" href>Career</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-lg-5">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3
+                                mb-md-0">
+                                <p href="#"> &copy; Copied, All Right
+                                    Reserved.</p>
+                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                                Designed By <a class="border-bottom"
+                                    href="https://htmlcodex.com">HTML Codex</a>
+                            </div>
+                            <div class="col-md-6 text-center text-md-end">
+                                <div class="footer-menu">
+                                    <a href="#home">Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i
+                    class="bi bi-arrow-up text-white"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <!-- Magnific Popup for lightboxes -->
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+
+</html>
